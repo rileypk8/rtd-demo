@@ -1,0 +1,8 @@
+.. vim: syntax=rst
+
+==========================
+harvard_eduroam_user_guide
+==========================
+
+.. toctree::
+    harvard_eduroam_user_guide.rest

@@ -1,0 +1,218 @@
+.. vim: syntax=rst
+
+|C:\\Users\\Donavon Current\\Documents\\Harvard\\HUIT\\HUIT_LONG.eps|
+
+**eduroam**
+
+User Guide
+
+January 7, 2013
+
+Prepared by: DC Current, Mark I. Mayes
+
+**Table of Contents**
+
+`1 Scope and Background <#scope-and-background>`__
+`3 <#scope-and-background>`__
+
+   `1.1 Scope <#scope>`__ `3 <#scope>`__
+
+   `1.2 What is eduroam? <#what-is-eduroam>`__ `3 <#what-is-eduroam>`__
+
+   `1.3 Background <#background>`__ `3 <#background>`__
+
+   `1.3.1 Harvard Guest <#harvard-guest>`__ `4 <#harvard-guest>`__
+
+   `1.3.2 Harvard Help <#harvard-help>`__ `4 <#harvard-help>`__
+
+   `1.3.3 Harvard Secure <#harvard-secure>`__ `4 <#harvard-secure>`__
+
+   `1.3.4 eduroam <#eduroam>`__ `4 <#eduroam>`__
+
+   `1.3.5 Harvard University <#harvard-university>`__
+   `4 <#harvard-university>`__
+
+   `1.4 How does one get eduroam
+   credentials? <#what-is-my-eduroam-credential>`__
+   `5 <#what-is-my-eduroam-credential>`__
+
+Scope and Background
+====================
+
+Scope
+-----
+
+This document is relevant to the implementation of eduroam for use on
+the Harvard University wireless network, and globally at other
+educational institutions who are part of the global eduroam system.
+
+What is eduroam?
+----------------
+
+eduroam (**edu**\ cation **roam**\ ing) is the secure worldwide
+federated network access service developed for the international
+research and education community.
+
+**For the traveler**: eduroam provides per-user, per-session encrypted
+network access for visitors from participating institutions, without the
+need to gain guest credentials on arrival to an eduroam enabled
+location. The connectivity is instantaneous and the infrastructure is
+authenticated by the user. Study abroad students can join thousands of
+eduroam hotspots without any hassle or any data roaming charges.
+
+**For the institution**: eduroam removes the administrative steps
+required to provision visitors from other educational institutions.
+Access between networks from R&E institutions is negotiated once during
+the federation process and for all members of participating
+institutions. The eduroam network addresses CALEA requirements for
+visitors from other schools.
+
+Background
+----------
+
+Harvard University Information Technology (HUIT) Network Services (NS)
+has been working toward a common, user-friendly wireless experience
+across the Cambridge campus areas formerly served by the Faculty of Arts
+Sciences (FAS) and University Information Services (UIS) Central
+Administration IT (CAIT) networks. Under the current Phase of the
+project, five wireless networks (SSIDs) are being extended throughout
+the campus. These include:
+
+- Harvard Guest
+
+- Harvard Help
+
+- Harvard Secure
+
+- eduroam
+
+- Harvard University
+
+Harvard Guest
+~~~~~~~~~~~~~
+
+The Harvard Guest SSID is an open network without managed security
+measures, and is rate limited to 512kbps. This is approximately six
+times faster than a dialup modem, and is suitable for such internet
+usage as email and light web browsing.
+
+Harvard Help
+~~~~~~~~~~~~
+
+In addition to providing access to the SecureW2 supplicant, Harvard Help
+provides a landing page with information on the five (5) SSIDs and
+contact information for each school’s support staff.
+
+Harvard Secure
+~~~~~~~~~~~~~~
+
+Harvard Secure is a secure, encrypted wireless network that is the
+preferred wireless environment to be used for all University work. It
+requires use of client software called the SecureW2 supplicant. Once
+installed, this client saves your credentials and allows you to access
+the Harvard Secure network wherever it is available without your having
+to log in or take any action. Because it is encrypted, there is an
+additional layer of protection for all the data exchanged with your
+machine over this network.
+
+Once the supplicant is installed, Harvard Secure is easy to use and is
+the recommended network for all University work over wireless.
+
+If you wish to take advantage of the higher security provided by the
+*Harvard Secure* SSID, refer to the appropriate document for your client
+device or contact the Service Desk at ithelp@harvard.edu .
+
+eduroam
+~~~~~~~
+
+eduroam is a secure, encrypted wireless network that is provided for
+visiting faculty and students who have registered their equipment at
+their home institution. When a visiting user requests access to the
+eduroam SSID at Harvard with their appropriate login
+username@institution_domain, the eduroam system will proxy their
+credentials to their home institution for authentication, and, if
+acceptable, will provide immediate access to Harvard’s wireless
+environment without further registration.
+
+Harvard University
+~~~~~~~~~~~~~~~~~~
+
+The *Harvard University* SSID has been in use in the two areas and
+consolidation of these two separate networks is anticipated under a
+future phase of this project. Graphically, this is represented by the
+following diagram:
+
+|C:\\Users\\Donavon
+Current\\Documents\\Harvard\\eduroam\\wireless_clouds_v4.jpg|
+
+The user’s experience with an unregistered device associating with the
+*Harvard University* SSID differs dependent upon the access point (AP)
+that is in range and selected by the user’s device at the time the
+device attempts to associate with a wireless network. Please see the
+appropriate document for registering your device.
+
+What is my eduroam credential?
+------------------------------
+
+For Harvard faculty, staff, and students who plan on visiting another
+institution which has implemented eduroam, devices will need to
+implement a supplicant to store their appropriate credentials on a
+certificate within the device. The process is similar to that used to
+implement Harvard Secure.
+
+The first step is to go to Harvard Help. This will explain the process
+to join the Harvard wireless environment. One of the choices will be
+eduroam. Clicking on eduroam will bring up an XpressConnect Wizard.
+
+The XpressConnect Wizard guides the user through the 802.1x
+configuration process. It implements various security controls such as
+the Secure Socket Layer (SSL, a protocol for encrypting information over
+the Internet) common name and issuer verification. It installs necessary
+patches or Service Packs for older operating systems, such as XP Service
+Pack 2, and for Windows systems it installs the necessary SecureW2
+supplicant.
+
+The pictures below indicate the entries for the eduroam configuration
+process that will allow use of eduroam networks at other institutions.
+
+|C:\\Users\\Donavon
+Current\\Documents\\Harvard\\eduroam\\eduroam_start.tiff|
+
+This image shows the selection for Harvard Secure or eduroam. The
+process is similar for each, but slightly different in the Harvard ID.
+Harvard Secure configuration only requires the HUID, whereas eduroam
+configuration requires [`HUID]@harvard.edu <mailto:HUID@harvard.edu>`__
+so that the institution is included in the login name. This enables the
+other institution to request confirmation of credentials from Harvard.
+
+|C:\\Users\\Donavon
+Current\\Documents\\Harvard\\eduroam\\eduroam_creds.tiff|
+
+This image shows the suggested format of the login for eduroam which
+includes the harvard.edu suffix to the HUID.
+
+|C:\\Users\\Donavon
+Current\\Documents\\Harvard\\eduroam\\eduroam_creds_filled.tiff|
+
+This image shows the complete input including the PIN for the HUID.
+
+Once configured, users can seamlessly access the “eduroam” SSID at any
+participating institution around the world. There should be no user
+action after the initial (XpressConnect) configuration. Users will
+simply need to log in to the “eduroam” SSID with [HUID]@harvard.edu.
+
+.. |C:\\Users\\Donavon Current\\Documents\\Harvard\\HUIT\\HUIT_LONG.eps| image:: media/image1.wmf
+   :width: 3.6014in
+   :height: 0.57869in
+.. |C:\\Users\\Donavon Current\\Documents\\Harvard\\eduroam\\wireless_clouds_v4.jpg| image:: media/image2.jpeg
+   :width: 6in
+   :height: 2.97021in
+.. |C:\\Users\\Donavon Current\\Documents\\Harvard\\eduroam\\eduroam_start.tiff| image:: media/image3.tiff
+   :width: 6in
+   :height: 4.64545in
+.. |C:\\Users\\Donavon Current\\Documents\\Harvard\\eduroam\\eduroam_creds.tiff| image:: media/image4.tiff
+   :width: 6in
+   :height: 4.64545in
+.. |C:\\Users\\Donavon Current\\Documents\\Harvard\\eduroam\\eduroam_creds_filled.tiff| image:: media/image5.tiff
+   :width: 6in
+   :height: 4.64545in
